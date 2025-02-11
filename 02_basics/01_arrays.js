@@ -28,6 +28,7 @@ const myn1 = myArr.slice(1,3)
 console.log(myn1);
 const myn2 = myArr.splice(1,3)
 console.log(myn2);
+
 /*Feature	                slice()	   splice()
 Modifies original array?	❌ No	  ✅ Yes
 Returns a new array?	 ✅ Yes	      ✅ (Removed elements)
