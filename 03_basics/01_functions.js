@@ -30,7 +30,7 @@ const result = addTwoNumbers(3,5)
 function loginUserMessage(username = "Sam"){
     //another way to write it 
     if(!username){
-        console.log("Please enter your username ");
+        //console.log("Please enter your username ");
         return 
     }
     // if(username === undefined){
@@ -39,4 +39,35 @@ function loginUserMessage(username = "Sam"){
     // }
     return `${username} just logged in`
 }
-console.log(loginUserMessage("Yaqoob"));
+//console.log(loginUserMessage("Yaqoob"));
+
+function calculateCartPrice(val1,val2, ...num1){ //... it's a rest operator here i have use it because i want to show the rest of the cart price if i simply return it than 4 
+// it will only show first one thats why i used rest in rest it pack all values in bundle and show it to you 
+    return num1 
+}
+//console.log(calculateCartPrice(200,300,400,2000));
+
+const user = {
+    username: "Yaqoob",
+    price: 199
+}
+
+function handleobject(anyobject){
+    console.log(`Username is ${anyobject.username} & price is ${anyobject.price}`);
+}
+
+//handleobject(user)
+
+handleobject({
+    username: "sam",
+    price: 399
+})
+
+const myNewArray = [200,400,100,600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+//console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200,400,500,1000]));
