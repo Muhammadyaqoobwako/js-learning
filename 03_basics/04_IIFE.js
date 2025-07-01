@@ -35,23 +35,23 @@
 //this a topic
 //execute code + call stack
 
-function one(){
-    console.log("one");
+// function one(){
+//     console.log("one");
     
 
-}
-function two() {
-    console.log("two");
+// }
+// function two() {
+//     console.log("two");
     
-}
-function three() {
-    console.log("three");
+// }
+// function three() {
+//     console.log("three");
     
-}
+// }
 
-one()
-two()
-three()
+// one()
+// two()
+// three()
 
 
 function one() {
