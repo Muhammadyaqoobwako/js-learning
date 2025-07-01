@@ -24,9 +24,47 @@
 // })()
 
 //if we want to pass the name or vaiable in the function
-(  (name) => {
-    console.log(`DB Connected Two ${name}`);
+// (  (name) => {
+//     console.log(`DB Connected Two ${name}`);
     
-})('Yaqoob')
+// })('Yaqoob')
 
 //=> we use if to clear pollution of global scope
+
+
+//this a topic
+//execute code + call stack
+
+function one(){
+    console.log("one");
+    
+
+}
+function two() {
+    console.log("two");
+    
+}
+function three() {
+    console.log("three");
+    
+}
+
+one()
+two()
+three()
+
+
+function one() {
+    console.log("one");
+    two()
+}
+function two() {
+    console.log("two");
+    three()
+}
+function three() {
+    console.log("three")
+}
+one()
+two()
+three()
