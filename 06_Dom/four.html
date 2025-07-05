@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code with Yaqoob DOM</title>
+</head>
+<body style="background-color: black; color: #fff ">
+    <ul class="language"><li>
+      Javascript </li>
+    </ul>
+</body>
+<script>
+    function addLanguage (langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("typeScript")
+
+    //in big companies people perfer this approch for optimize thing 
+
+    function addoptiLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+    addoptiLanguage('ruby');
+    addoptiLanguage('go-lang');
+
+
+    //edit with optimize way 
+    const secoondlang  = document.querySelector("li:nth-child(2)")
+    console.log(secoondlang);
+    
+    //secoondlang.innerHTML = "mojo"
+    const newli = document.createElement('li');
+    newli.textContent = "Mojo"
+    secoondlang.replaceWith(newli)
+
+    //edit
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = '<li>TypeScript</li>'
+
+    //remove
+    const lastlang = document.querySelector('li:last-child'); //yaha p space nahi deni ka 
+    lastlang.remove();
+
+
+</script>
+</html>
