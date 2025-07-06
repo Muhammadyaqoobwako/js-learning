@@ -1,0 +1,15 @@
+Js is synchronous single threaded language which executes sequentially.
+We have API's which allow us to write the asynchronous code like setTimeOut etc.
+Javascript engine = heap + call stack
+Js engine (V8) is always used with some runtime environment like browser, nodejs, deno etc for asynchronous programming.
+When JS engine finds asynchronous block it does not go in the call stack rather it goes to the task queue, then task queue add it to the call stack.
+
+blocking code : 
+wait i am coming don't do any thing else (Read file Sync)
+
+non blocking code : 
+wait i am coming you can do your work while i am coming (Read file Async)
+
+fetch: in this we have a promise thing (high pripority)
+which says if it's done than ok or do it later 
+
