@@ -20,4 +20,38 @@ Object.prototype.hitesh = function(){
     
 }
 
-Heropower.yaqoob();
+Array.prototype.heyYaqoob = function(){
+    console.log(`yaqoob says hello`)
+}
+
+// Heropower.yaqoob();
+//myHeros.hitesh();
+
+//myHeros.heyYaqoob();
+// Heropower.heyYaqoob();
+
+
+//inheritance
+
+const User = {
+    name: "chai",
+    email: "chai@google.com"
+}
+
+const Teacher ={
+    makeVideo: true
+}
+
+const TeachingSupport ={
+    isAvaliable: false
+} 
+
+const TASupport = {
+    makeAssigement: 'JS assigement',
+    fullTime: true,
+    __proto__: TeachingSupport
+}
+
+Teacher.__proto__ =  User
+
+//modern syntax
